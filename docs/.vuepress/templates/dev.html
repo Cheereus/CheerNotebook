@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--webpack externals css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+</head>
+<body>
+<div id="app"></div>
+<!--webpack externals js-->
+<script src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"></script>
+<script>
+    window.onload = function (){
+        setInterval(function (){
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ]
+            });
+        }, 1000)
+    }
+</script>
+<!--<script type="text/javascript"-->
+<!--        async-->
+<!--        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">-->
+<!--    window.onload = function (){-->
+<!--        MathJax.Hub.Config({-->
+<!--            tex2jax: {-->
+<!--                inlineMath: [['$','$'], ['\\(','\\)']],-->
+<!--                displayMath: [['$$','$$'], ['\[\[','\]\]']],-->
+<!--                processEscapes: true,-->
+<!--                processEnvironments: true,-->
+<!--                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],-->
+<!--                TeX: { equationNumbers: { autoNumber: "AMS" },-->
+<!--                    extensions: ["AMSmath.js", "AMSsymbols.js"] }-->
+<!--            }-->
+<!--        });-->
+
+<!--        MathJax.Hub.Queue(function() {-->
+<!--            // Fix <code> tags after MathJax finishes running. This is a-->
+<!--            // hack to overcome a shortcoming of Markdown. Discussion at-->
+<!--            // https://github.com/mojombo/jekyll/issues/199-->
+<!--            var all = MathJax.Hub.getAllJax(), i;-->
+<!--            for(i = 0; i < all.length; i += 1) {-->
+<!--                all[i].SourceElement().parentNode.className += ' has-jax';-->
+<!--            }-->
+<!--        });-->
+<!--    }-->
+<!--</script>-->
+</body>
+</html>
