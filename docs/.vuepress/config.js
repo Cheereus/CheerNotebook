@@ -1,4 +1,7 @@
 module.exports = {
+    head: [
+        ['link', { rel: 'icon', href: '/favicon.ico' }]
+    ],
     title: '每一天都是新的练习',
     description: 'Just playing around!',
     themeConfig: {
