@@ -1,40 +1,16 @@
 module.exports = {
-    evergreen: true,
-    locales: {
-        '/': {
-            lang: 'zh-CN',
-            title: '每一天都是新的练习',
-            description: 'a blog powered by vuepress'
-        }
-    },
-    head: [
-        ['link', {rel: 'icon', href: '/meta/favicon.ico'}]
-    ],
-    theme: require.resolve('../../'),
+    title: '每一天都是新的练习',
+    description: 'Just playing around!',
     themeConfig: {
         sidebar: [
-            '/post/'
+            ['/fanwei/', '感知机'],
         ],
-        sidebarDepth: 4,
-        domain: 'http://localhost/ ',
-        notice: [
-            {
-                text: 'vuepress 博客主题开源地址',
-                url: 'https://github.com/cadecode/vuepress-theme-2zh'
-            },
-            {
-                text: 'vuepress 官方文档',
-                url: 'https://www.vuepress.cn/'
-            },
-            {
-                text: 'vue 官方文档',
-                url: 'https://cn.vuejs.org/v2/guide/'
-            }
-        ],
-        links: [
-            {text: 'Github', url: 'https://github.com'},
-        ],
-        // comment: ['Your own appId', 'Your own appKey']
-        comment: ['vXo2Gd4MBJRYWdM0rBpfUl5A-gzGzoHsz', 'sUn0budFdojUMbAjoFMBvWgp']
-    }
+        sidebarDepth: 5,
+        nav: [
+            { text: '首页', link: '/' },
+            { text: '单细胞聚类', link: '/fanwei/' },
+            { text: 'Github', link: 'https://github.com/Cheereus/WIT-Xinxi-Lab' },
+        ]
+    },
+
 }

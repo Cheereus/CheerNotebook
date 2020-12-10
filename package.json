@@ -1,42 +1,13 @@
 {
-  "name": "@cadecode/vuepress-theme-2zh",
-  "version": "1.1.0",
-  "description": "由 vuepress 驱动的静态博客主题",
+  "name": "home",
+  "version": "1.0.0",
+  "description": "xinxi_home",
   "main": "index.js",
   "scripts": {
-    "dev": "vuepress dev docs",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vuepress dev docs --no-cache",
     "build": "vuepress build docs"
   },
-  "keywords": [
-    "blog",
-    "theme",
-    "vuepress"
-  ],
-  "files": [
-    "components/",
-    "layouts/",
-    "styles/",
-    "utils/",
-    "templates/",
-    "enhanceApp.js",
-    "index.js"
-  ],
-  "author": "Cade Li <cadecode@foxmial.com>",
-  "license": "ISC",
-  "homepage": "https://github.com/CadeCode/vuepress-theme-2zh",
-  "bugs": {
-    "url": "https://github.com/CadeCode/vuepress-theme-2zh/issues"
-  },
-  "dependencies": {
-    "@vuepress/plugin-blog": "^1.9.2",
-    "@vuepress/plugin-medium-zoom": "^1.7.0",
-    "@vuepress/plugin-search": "^1.7.0",
-    "core-js": "^2.6.11",
-    "dayjs": "^1.8.31",
-    "element-ui": "^2.13.2"
-  },
-  "devDependencies": {
-    "babel-plugin-component": "^1.1.1",
-    "vuepress": "^1.5.2"
-  }
+  "author": "C",
+  "license": "ISC"
 }
