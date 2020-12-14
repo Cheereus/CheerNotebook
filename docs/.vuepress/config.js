@@ -21,6 +21,12 @@ module.exports = {
             ],
             '/resume/': [
                 ''
+            ],
+            '/Java/': [
+                '',
+                '2020-05-21',
+                '2020-05-22',
+                '2020-05-24',
             ]
         },
         sidebarDepth: 5,
@@ -28,6 +34,7 @@ module.exports = {
             { text: '首页', link: '/' },
             { text: '简历', link: '/resume/' },
             { text: '统计学习方法', link: '/SLM/' },
+            { text: 'Hadoop', link: '/Java/' },
             { text: 'Github', link: 'https://github.com/Cheereus' },
         ]
     },
