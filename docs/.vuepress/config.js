@@ -2,8 +2,8 @@ module.exports = {
     head: [
         ['link', { rel: 'icon', href: '/favicon.ico' }]
     ],
-    title: '陈十一的博客',
-    description: '每一天都是新的练习',
+    title: '每一天都是新的练习',
+    description: '用明天换走失去的',
     themeConfig: {
         sidebar: {
             '/SLM/': [

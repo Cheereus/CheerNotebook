@@ -25,11 +25,3 @@ Git 基础理论知识及基本操作如 pull、commit、push 等
 MarkDown 基本语法
 
 VuePress 基础理论及操作（非必须）
-
-## 操作流程
-
-Assesses
-
-$$f(x)$$
-
-[鄂ICP备2020022304号](https://beian.miit.gov.cn/)
