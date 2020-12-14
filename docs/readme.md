@@ -11,6 +11,12 @@ features:
   details: 提供页面渲染框架及布局。
 ---
 
+原来部署于 Github Pages 的博客已全面迁移至华为云国内服务器，大幅提升访问性能和可用性
+
+基于 Vuepress 部署，同时集成了百度统计与谷歌统计，改用 Katex 进行数学公式的渲染
+
+对于 SEO 的友好度尚待长期测试，另外需要补充添加稳定的评论功能
+
 ## 需要什么
 
 [NodeJs](https://nodejs.org/zh-cn/) 必需
@@ -23,4 +29,4 @@ Git 基础理论知识及基本操作如 pull、commit、push 等
 
 MarkDown 基本语法
 
-VuePress 基础理论及操作（非必须）
+VuePress 基础理论及操作
