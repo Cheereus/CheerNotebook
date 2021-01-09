@@ -11,22 +11,16 @@ features:
   details: 提供页面渲染框架及布局。
 ---
 
-原来部署于 Github Pages 的博客已全面迁移至华为云国内服务器，大幅提升访问性能和可用性
+## 欢迎来到我的博客！
 
-基于 Vuepress 部署，同时集成了百度统计与谷歌统计，改用 Katex 进行数学公式的渲染
+我是一名在读的二年级研究僧，正在考虑寻找一些`机器学习`或者`Python`方面的实习工作
 
-对于 SEO 的友好度尚待长期测试，另外需要补充添加稳定的评论功能
+您可以点击上方的`我在找工作`按钮来查看我的简历
 
-## 需要什么
+同时我也偶尔做一些小兼职，包括但不限于提供`机器学习`、`Python`或者`前端`方向的各种帮助
 
-[NodeJs](https://nodejs.org/zh-cn/) 必需
+我的邮箱 fanwei1995@hotmail.com
 
-[Git](https://git-scm.com/downloads) 必需
+我的QQ号 594863287
 
-TortoiseGit 或 PyCharm 或 Webstorm 或直接使用 Git Bash 命令行操作
-
-Git 基础理论知识及基本操作如 pull、commit、push 等
-
-MarkDown 基本语法
-
-VuePress 基础理论及操作
+期待您的联系！
