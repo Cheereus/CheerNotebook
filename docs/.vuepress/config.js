@@ -33,6 +33,9 @@ module.exports = {
                 '',
                 '2020-04-11',
                 '2020-04-18',
+            ],
+            '/NLP/': [
+                '',
             ]
         },
         sidebarDepth: 5,
@@ -42,6 +45,7 @@ module.exports = {
             { text: 'Python', link: '/Python/' },
             { text: 'Hadoop', link: '/Java/' },
             { text: '统计学习方法', link: '/SLM/' },
+            { text: '自然语言处理', link: '/NLP/' },
             { text: 'Github', link: 'https://github.com/Cheereus' },
         ]
     },
