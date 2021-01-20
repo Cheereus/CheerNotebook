@@ -165,3 +165,82 @@ $$T(M)=\lbrace x\vert p\in\delta(q_0,x) \text{ 且 } p\in F \rbrace$$
 即 给定一个 NFA 可以构造一个等价的 DFA
 
 由于 DFA 与 NFA 接受同样的语言，所以一般情况下无需区分它们，二者统称为有限自动机。
+
+#### 正则文法与有限自动机的关系
+
+##### 【定理】若 $G=(V_N,V_T,P,S)$ 是一个正则文法，则存在一个 FA $M=(\Sigma,Q,\delta,q_0,F)$，使得 $T(M)=L(G)$。
+
+根据这个定理，可以用以下方法由给定的正则文法 $G=(V_N,V_T,P,S)$ 构造 FA $M$。具体步骤如下：
+
+（1）令 $\Sigma=V_T, Q=V_N\cup\lbrace T\rbrace,q_0=S$，其中 $T$ 是一个新增加的非终结符；
+
+（2）如果在 $P$ 中有产生式 $S\to\varepsilon$，则 $F=\lbrace S,T \rbrace$，否则 $F=\lbrace T \rbrace$；
+
+（3）如果在 $P$ 中有产生式 $B\to a,B\in V_N,a\in V_T$，则 $T\in\delta(B,a)$；
+
+（4）如果在 $P$ 中有产生式 $B\to aC, B,C\in V_N,a\in V_T$，则 $C\in\delta(B,a)$；
+
+（5）对于每一个 $a\in V_T$，有$\delta(T,a)=\varnothing$。
+
+##### 【定理】若 $M=(\Sigma,Q,\delta,q_0,F)$ 是一个有限自动机，则存在一个正则文法 $G=(V_N,V_T,P,S)$，使得 $L(G)=T(M)$。
+
+由 FA $M$ 构造 $G$ 的一般步骤为：
+
+（1）令 $V_N=Q,V_T=\Sigma,S=q_0$；
+
+（2）如果 $C\in\delta(B,a),B,C\in Q,a\in\Sigma$，则在 $P$ 中有产生式 $B\to aC$；
+
+（3）如果 $C\in\delta(B,a),C\in F$，则在 $P$ 中有产生式 $B\to a$。
+
+根据上面介绍的三个定理可以得到一个重要结论：对于任意一个正则文法所产生的语言，总可以构造一个确定的有限自动机识别它。
+
+#### 上下文无关文法与下推自动机
+
+下推自动机（PDA）可以看成是一个带有附加下推存储器的有限自动机，下推存储器是一个堆栈（stack）。
+
+##### 【定义】不确定的下推自动机
+
+PDA 可以表达成一个七元组：
+
+$$M=(\Sigma,Q,\Gamma,\delta,q_0,Z_0,F)$$
+
+其中，$\Sigma$ 是输入符号的有穷集合；$Q$ 是状态的有限集合；$\Gamma$ 为下推存储器符号的有穷集合；$q_0\in Q$ 是初始状态；$Z_0\in\Gamma$ 为最初
+出现在下推存储器顶端的开始符号；$F\subseteq Q$ 是终止状态集合；$\delta$ 是从 $Q\times(\Sigma\cup\lbrace\varepsilon\rbrace)\times\Gamma$ 到
+$Q\times\Gamma^\star$ 的子集和映射。映射关系 $\delta$：
+
+$$\delta(q,a,Z)=\lbrace (q_1,\gamma_1),(q_2,\gamma_2),\cdots,(q_m,\gamma_m) \rbrace$$
+
+其中 $q_1,q_2,\cdots,q_m \in Q,a\in\Sigma,Z\in\Gamma,\gamma_1,\gamma_2,\cdots,\gamma_m\in\Gamma^\star$。
+
+其含义是：当下推自动机处于状态 $q$，接受输入符号 $a$ 时，自动机将进入到 $q_i(i=1,2,\cdots,m)$ 状态，并以 $\gamma_i$ 来代替下推存储器（栈）顶端符号 $Z$，
+同时将输入头指向下一个字符。当 $Z$ 被 $\gamma_i$ 取代时，$\gamma_i$ 的符号按照从左到右的顺序依次从下向上推入到存储器。
+
+特殊情况下，$\delta(q,\varepsilon,Z)=\lbrace (q_1,\gamma_1),(q_2,\gamma_2),\cdots,(q_m,\gamma_m) \rbrace$ 时，意味着下推自动机
+处于状态 $q$ 时没有接受任何输入信号，因此输入头位置不移动，只用于处理下推存储器内部的操作，自动机进入到 $q_i(i=1,2,\cdots,m)$ 状态，并以 $\gamma_i$ 来代替下推存储器（栈）顶端符号 $Z$。
+这个操作叫作“ $\varepsilon$ 移动”。
+
+对于下推自动机，判断一种语言（或者一个句子）是否被 PDA 接受的标准有两种：
+
+（1）终止状态接受标准
+
+对于 PDA $M$，句子 $x$ 被以终止状态标准 $T(M)$ 所接受的定义为：
+
+$$T(M)=\lbrace x\vert x:(q_0,Z_0) \mid\frac{*}{M}$$
+
+$$\color{OrangeRed}\text{公式待补充}$$
+
+#### 图灵机
+
+$$\color{OrangeRed}\text{公式待补充}$$
+
+#### 线性界限自动机
+
+$$\color{OrangeRed}\text{公式待补充}$$
+
+### 自动机在自然语言处理中的应用
+
+#### 单词拼写检查
+
+#### 单词形态分析
+
+#### 词性消歧
