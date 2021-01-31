@@ -21,7 +21,8 @@ module.exports = {
             ],
             '/resume/': [
                 '',
-                '2020-07-30'
+                '2020-07-30',
+                'weekly-report'
             ],
             '/Java/': [
                 '',
