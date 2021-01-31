@@ -8,3 +8,6 @@
   
 - [ ] P2 词向量表示
 
+[计算机视觉基础 北邮](https://www.bilibili.com/video/BV1nz4y197Qv)
+
+- [ ] P1 引言
