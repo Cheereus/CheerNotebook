@@ -18,11 +18,11 @@
 
 - P3
 
-《算法笔记》
+[《算法笔记》](https://book.douban.com/subject/26827295/)
 
 - 第 3 章 入门模拟
 
-《百面机器学习》
+[《百面机器学习》](https://book.douban.com/subject/30285146/)
 
 - 第 1 章 特征工程
 
