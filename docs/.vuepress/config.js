@@ -38,6 +38,7 @@ module.exports = {
             '/NLP/': [
                 '',
                 '2021-01-22',
+                '2021-01-31',
             ]
         },
         sidebarDepth: 5,
