@@ -21,8 +21,7 @@ module.exports = {
             ],
             '/resume/': [
                 '',
-                '2020-07-30',
-                'weekly-report'
+                '2020-07-30'
             ],
             '/Java/': [
                 '',
@@ -39,6 +38,10 @@ module.exports = {
                 '',
                 '2021-01-22',
                 '2021-01-31',
+            ],
+            '/reports/': [
+                '',
+                '2021-02-01'
             ]
         },
         sidebarDepth: 5,

@@ -2,13 +2,6 @@
 home: true
 actionText: 我的简历
 actionLink: /resume/
-features:
-- title: 阿里云
-  details: 提供域名及 SSL 证书签发。
-- title: 华为云
-  details: 提供 ECS 云服务器部署及备案。
-- title: Vuepress
-  details: 提供页面渲染框架及布局。
 ---
 
 ## 欢迎来到我的博客！
@@ -19,8 +12,18 @@ features:
 
 同时我也偶尔做一些小兼职，包括但不限于提供`机器学习`、`Python`或者`前端`方向的各种帮助
 
-我的邮箱 fanwei1995@hotmail.com
+我的邮箱：fanwei1995@hotmail.com
 
-我的QQ号 594863287
+我的微信和QQ号：594863287
 
 期待您的联系！
+
+## 精华内容
+
+[2021工作与学习汇报](/reports/)
+
+[统计学习方法笔记](/SLM/)
+
+[Hadoop入门](/Java/)
+
+[Github](https://github.com/Cheereus)
