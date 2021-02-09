@@ -16,7 +16,7 @@
 
 - ID3 被 C4.5 可以在每个结点上产生出多叉分支，且每个特征在层级之间不会复用，而 CART 每个结点只会产生两个分支，因此最后会形成一棵二叉树，且每个特征可以被重复使用
 
-- ID3 和 C4.5 通过剪枝来权衡树的准确性与泛化能力，而 CART 直接利用全部数据发现所有可能的树结构进行对比。
+- ID3 和 C4.5 通过剪枝来权衡树的准确性与泛化能力，而 CART 直接利用**全部数据**发现所有可能的树结构进行对比。
 
 ### 剪枝
 
@@ -26,6 +26,6 @@
 
 - 相比预剪枝，后剪枝方法通常可以得到泛化能力更强的决策树，但时间开销会更大。
 
-- 常见的后剪枝方法包括**错误率降低剪枝（Reduced Error Pruning，REP）、悲观剪枝（Pessimistic Error Pruning，PEP）、代价复杂度剪枝（Cost Complexity Pruning，CCP）、最小误差剪枝（Minimum Error Pruning，MEP）、CVP（Critical Value Pruning）、OPP（Optimal Pruning）等方法
+- 常见的后剪枝方法包括错误率降低剪枝（Reduced Error Pruning，REP）、悲观剪枝（Pessimistic Error Pruning，PEP）、代价复杂度剪枝（Cost Complexity Pruning，CCP）、最小误差剪枝（Minimum Error Pruning，MEP）、CVP（Critical Value Pruning）、OPP（Optimal Pruning）等方法
 
-- 代价复杂度剪枝 CCP 使用交叉验证策略时，不需要测试数据，精确度与 REP 差不多，但形成的树复杂度小。而从算法复杂度角度，由于生成子树序列的时间复杂度与原始决策树的非叶结点个数呈二次关系，导致算法相比 REP、PEP、MEP 等线性复杂度的后剪枝方法，运行时间开销更大
+- 代价复杂度剪枝 CCP 使用交叉验证策略时，**不需要测试数据**，精确度与 REP 差不多，但形成的**树复杂度小**。而从算法复杂度角度，由于生成子树序列的时间复杂度与原始决策树的非叶结点个数呈二次关系，导致算法相比 REP、PEP、MEP 等线性复杂度的后剪枝方法，**运行时间开销更大**
