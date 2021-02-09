@@ -48,6 +48,8 @@ module.exports = {
                 '',
                 'SVM',
                 'LR',
+                'DT',
+                'DimensionReduction',
             ]
         },
         sidebarDepth: 5,
