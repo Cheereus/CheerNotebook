@@ -43,6 +43,11 @@ module.exports = {
                 '',
                 '2021-02-01',
                 '2021-02-08'
+            ],
+            '/InterviewForML/': [
+                '',
+                'SVM',
+                'LR',
             ]
         },
         sidebarDepth: 5,
