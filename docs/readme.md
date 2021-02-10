@@ -18,6 +18,13 @@ actionLink: /resume/
 
 期待您的联系！
 
+## 最近找工作状态
+
+|公司|职位|项目|地点|投递时间|状态|
+|----|----|----|----|----|----|
+|OPPO|机器学习算法工程师|2022 实习生招聘|上海、北京|02-06|等待中|
+|Microsoft|Software Engineer Intern C+AI|2022 Graduates Summer Intern|北京|02-10|等待中|
+
 ## 精华内容
 
 [机器学习面试笔记](/InterviewForML/)
