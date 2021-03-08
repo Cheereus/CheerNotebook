@@ -14,7 +14,7 @@ actionLink: /resume/
 
 我的邮箱：fanwei1995@hotmail.com
 
-我的微信和QQ号：594863287
+我的微信和QQ号：594863287 添加请注明来自博客
 
 期待您的联系！
 
