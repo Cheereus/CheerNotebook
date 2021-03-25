@@ -33,10 +33,6 @@ actionLink: /resume/
 
 ## 精华内容
 
-[机器学习面试笔记](/InterviewForML/)
-
-[2021工作与学习汇报](/reports/)
-
 [统计学习方法笔记](/SLM/)
 
 [Hadoop入门](/Java/)
