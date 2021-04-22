@@ -53,6 +53,11 @@ module.exports = {
                 'LR',
                 'DT',
                 'DimensionReduction',
+            ],
+            '/MaoMao/': [
+                '',
+                '202104',
+                '202105',
             ]
         },
         sidebarDepth: 5,
